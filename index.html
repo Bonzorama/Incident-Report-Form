@@ -1,0 +1,83 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Incident Form</title>
+  <meta name="description" content="Web Form">
+  <meta name="author" content="Bonnie Toupin">
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="src\style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">IT Support</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">IT Team</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#">Services</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Report an Incident<span class="sr-only">(current)</span></a>
+      </li>
+      </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav><br>
+
+    <div class="container">
+    <form>
+  <div class="form-group">
+    <p class="h1">Incident Report Form</p><br>
+    <label for="inputNameField"><strong>Name</strong></label>
+    <input type="text" class="form-control" id="inputNameField" placeholder=""><br> 
+    <label for="exampleFormControlInput1"><strong>Email</strong></label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder=""><br>
+    <label for="inputNameField"><strong>Subject</strong></label>
+    <input type="text" class="form-control" id="inputSubjectField" placeholder=""> 
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1"><strong>Location of Incident</strong></label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>Office</option>
+      <option>Lab</option>
+      <option>Classroom</option>
+      <option>Student Residence</option>
+      <option>Off Campus</option>
+    </select>
+  </div><br>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1"><strong>Description</strong></label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div><br>
+  <form>
+  <div class="custom-file">
+  <input type="file" class="custom-file-input" id="customFile">
+  <label class="custom-file-label" for="customFile">Attach file</label>
+</div><br>
+</form><br><br>
+  <button type="submit" class="btn btn-primary">Submit</button><br>
+  </div>
+  </div>
+</form>
+  <script src="src\index.js"></script>
+</body>
+</html>
